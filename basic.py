@@ -2,34 +2,6 @@ import cv2
 import numpy as np
 from ppadb.client import Client as AdbClient
 
-def preprocess_image(image):
-    # Convert to grayscale
-    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    # Apply Gaussian blur to reduce noise
-    blurred = cv2.GaussianBlur(gray, (1, 1), 0)
-    # Normalize the image
-    normalized = cv2.normalize(blurred, None, 0, 255, cv2.NORM_MINMAX)
-    return normalized
-
-def find_icon(screen_img, template_img, threshold=0.8):
-    # Preprocess both images
-    processed_screen = preprocess_image(screen_img)
-    processed_template = preprocess_image(template_img)
-    
-    # Try multiple template matching methods
-    methods = [cv2.TM_CCOEFF_NORMED, cv2.TM_CCORR_NORMED]
-    best_confidence = 0
-    best_location = None
-    
-    for method in methods:
-        result = cv2.matchTemplate(processed_screen, processed_template, method)
-        _, confidence, _, location = cv2.minMaxLoc(result)
-        if confidence > best_confidence:
-            best_confidence = confidence
-            best_location = location
-            
-    return best_confidence, best_location
-
 def main():
     # 1. Connect to ADB
     adb = AdbClient(host="127.0.0.1", port=5037)
@@ -51,15 +23,17 @@ def main():
     screen_img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
 
     # 4. Load your reference image of the Gmail icon
-    gmail_icon = cv2.imread('play_store_img.png', cv2.IMREAD_COLOR)
+    gmail_icon = cv2.imread('6s_card.png', cv2.IMREAD_COLOR)
     if gmail_icon is None:
         raise FileNotFoundError("Could not find 'gmail_icon.png' in the current directory.")
 
-    # 5. Run improved template matching
-    max_val, max_loc = find_icon(screen_img, gmail_icon, threshold=0.8)
+    # 5. Run template matching
+    result = cv2.matchTemplate(screen_img, gmail_icon, cv2.TM_CCOEFF_NORMED)
+    _, max_val, _, max_loc = cv2.minMaxLoc(result)
 
-    # 6. Check if icon was found
-    threshold = 0.8
+    # 6. Define a threshold for a "good" match
+    threshold = 0.8  # Adjust as needed. 0.8 or 0.9 are common values.
+
     if max_val >= threshold:
         # Template found with high confidence
         print(f"Gmail icon found with confidence: {max_val:.2f}")
