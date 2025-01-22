@@ -23,12 +23,12 @@ def main():
     screen_img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
 
     # 4. Load your reference image of the Gmail icon
-    gmail_icon = cv2.imread('6s_card.png', cv2.IMREAD_COLOR)
+    gmail_icon = cv2.imread('card_templates/hero_card_3c.png', cv2.IMREAD_COLOR)
     if gmail_icon is None:
         raise FileNotFoundError("Could not find 'gmail_icon.png' in the current directory.")
 
     # 5. Run template matching
-    result = cv2.matchTemplate(screen_img, gmail_icon, cv2.TM_CCOEFF_NORMED)
+    result = cv2.matchTemplate(screen_img, gmail_icon,cv2.TM_CCOEFF_NORMED)
     _, max_val, _, max_loc = cv2.minMaxLoc(result)
 
     # 6. Define a threshold for a "good" match
