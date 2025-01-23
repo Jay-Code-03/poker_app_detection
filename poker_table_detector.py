@@ -444,8 +444,8 @@ class PokerCardDetector:
 def main():
     detector = PokerCardDetector()
 
-    #detector.find_coordinates()
-    detector.run_detection()
+    detector.find_coordinates()
+    #detector.run_detection()
 
 if __name__ == "__main__":
     main()
