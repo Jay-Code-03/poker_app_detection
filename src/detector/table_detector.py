@@ -6,7 +6,7 @@ from src.detector.template_matcher import TemplateMatcher
 from src.detector.text_detector import TextDetector
 from src.config.regions import *
 
-class CardDetector:
+class PokerTableDetector:
     def __init__(self, template_matcher: TemplateMatcher):
         self.template_matcher = template_matcher
         self.text_detector = TextDetector()

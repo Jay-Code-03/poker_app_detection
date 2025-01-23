@@ -6,7 +6,7 @@ import numpy as np
 import cv2
 import time
 from src.detector.template_matcher import TemplateMatcher
-from src.detector.card_detector import CardDetector
+from src.detector.table_detector import PokerTableDetector
 from src.utils.device_connector import DeviceConnector
 
 
@@ -14,7 +14,7 @@ class PokerDetectorApp:
     def __init__(self):
         self.device = DeviceConnector.connect_device()
         self.template_matcher = TemplateMatcher('card_templates')
-        self.card_detector = CardDetector(self.template_matcher)
+        self.table_detector = PokerTableDetector(self.template_matcher)
 
     def capture_screen(self) -> np.ndarray:
         screenshot_data = self.device.screencap()
@@ -54,7 +54,7 @@ class PokerDetectorApp:
     def run(self):
         while True:
             screen = self.capture_screen()
-            state = self.card_detector.detect_table_state(screen)
+            state = self.table_detector.detect_table_state(screen)
             
             print("\n=== Table State ===")
             print("Hero cards:", [f"{c.rank}{c.suit}" for c in state['hero_cards']])
