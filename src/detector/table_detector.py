@@ -1,4 +1,5 @@
 import cv2
+import os
 import numpy as np
 from typing import List, Optional
 from src.models.card import Card
@@ -43,6 +44,29 @@ class PokerTableDetector:
         if best_rank_conf > 0.6 and best_suit_conf > 0.9:
             return Card(best_rank, best_suit, min(best_rank_conf, best_suit_conf))
         return None
+    
+    def detect_button_position(self, screen: np.ndarray) -> dict:
+        button_positions = {'hero': False, 'villain': False}
+        
+        # Load button template
+        btn_template = cv2.imread(os.path.join(self.template_matcher.template_path, 'object_templates/btn.png'))
+        
+        for player, region in BUTTON_REGIONS.items():
+            roi = screen[region['y1']:region['y2'], region['x1']:region['x2']]
+            confidence, _ = self.template_matcher.match_template(roi, btn_template)
+            button_positions[player] = confidence > 0.8
+        
+        return button_positions
+    
+    def detect_hero_turn(self, screen: np.ndarray) -> bool:
+        # Load hero turn template
+        turn_template = cv2.imread(os.path.join(self.template_matcher.template_path,'object_templates/hero_turn.png'))
+        
+        roi = screen[HERO_TURN_REGION['y1']:HERO_TURN_REGION['y2'], 
+                    HERO_TURN_REGION['x1']:HERO_TURN_REGION['x2']]
+        
+        confidence, _ = self.template_matcher.match_template(roi, turn_template)
+        return confidence > 0.8
 
     def detect_table_state(self, screen: np.ndarray):
         # Detect hero cards
@@ -78,10 +102,19 @@ class PokerTableDetector:
                         POT_REGION['x1']:POT_REGION['x2']]
         pot_size = self.text_detector.detect_value(pot_roi)
 
+        # Add button detection
+        button_positions = self.detect_button_position(screen)
+        
+        # Add hero turn detection
+        is_hero_turn = self.detect_hero_turn(screen)
+
         return {
             'hero_cards': hero_cards,
             'community_cards': community_cards,
             'stacks': stacks,
             'bets': bets,
-            'pot_size': pot_size
+            'pot_size': pot_size,
+            'button_positions': button_positions,
+            'is_hero_turn': is_hero_turn
         }
+    

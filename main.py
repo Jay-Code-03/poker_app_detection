@@ -64,6 +64,8 @@ class PokerDetectorApp:
             print(f"Hero bet: ${state['bets']['hero']:.2f}")
             print(f"Villain bet: ${state['bets']['villain']:.2f}")
             print(f"Pot size: ${state['pot_size']:.2f}")
+            print(f"Button positions: {state['button_positions']}")
+            print(f"Is hero's turn: {state['is_hero_turn']}")
             print("================\n")
             
             time.sleep(3)
