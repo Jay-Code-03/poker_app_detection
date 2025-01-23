@@ -6,6 +6,9 @@ import numpy as np
 class TextDetector:
     @staticmethod
     def extract_number(text: str) -> float:
+        # Remove 'BB' or 'bb' from the text
+        text = text.upper().replace('BB', '')
+
         numbers = ''.join(c for c in text if c.isdigit() or c == '.')
         try:
             return float(numbers)
