@@ -36,11 +36,11 @@ class TextDetector:
         results = []
         
         # Standard preprocessing
-        text1 = self.detect_text(roi, False)
+        text1 = self.detect_text(roi)
         results.append(self.extract_number(text1))
         
         # Dark background preprocessing
-        text2 = self.detect_text(roi, True)
+        text2 = self.detect_text(roi)
         results.append(self.extract_number(text2))
         
         # Return non-zero result or average if multiple valid results
