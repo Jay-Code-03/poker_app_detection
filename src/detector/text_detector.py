@@ -19,7 +19,9 @@ class TextDetector:
 
         processed = ImagePreprocessor.preprocess_for_ocr(roi)
         
-        return pytesseract.image_to_string(processed, config='--psm 7 digits')
+        custom_config = r'--psm 7 --oem 3 -c tessedit_char_whitelist=0123456789.'
+        return pytesseract.image_to_string(processed, config=custom_config)
+
 
     def detect_value(self, roi: np.ndarray) -> float:
         text = self.detect_text(roi)
