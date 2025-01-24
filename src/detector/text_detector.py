@@ -15,14 +15,12 @@ class TextDetector:
         except ValueError:
             return 0.0
 
-    def detect_text(self, roi: np.ndarray, is_dark_background: bool = False) -> str:
-        if is_dark_background:
-            processed = ImagePreprocessor.preprocess_for_ocr_dark_background(roi)
-        else:
-            processed = ImagePreprocessor.preprocess_for_ocr(roi)
+    def detect_text(self, roi: np.ndarray) -> str:
+
+        processed = ImagePreprocessor.preprocess_for_ocr(roi)
         
         return pytesseract.image_to_string(processed, config='--psm 7 digits')
 
-    def detect_value(self, roi: np.ndarray, is_dark_background: bool = False) -> float:
-        text = self.detect_text(roi, is_dark_background)
+    def detect_value(self, roi: np.ndarray) -> float:
+        text = self.detect_text(roi)
         return self.extract_number(text)
