@@ -2,7 +2,7 @@ import cv2
 import pytesseract
 from src.utils.image_preprocessing import ImagePreprocessor
 import numpy as np
-
+#testing
 class TextDetector:
     @staticmethod
     def extract_number(text: str) -> float:
