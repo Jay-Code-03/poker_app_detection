@@ -15,7 +15,7 @@ class TextDetector:
         except ValueError:
             return 0.0
 
-    def detect_text(self, roi: np.ndarray, is_dark_background: bool = False) -> str:
+    def detect_text(self, roi: np.ndarray, is_dark_background: bool = True) -> str:
         if is_dark_background:
             processed = ImagePreprocessor.preprocess_for_ocr_dark_background(roi)
         else:
@@ -23,6 +23,6 @@ class TextDetector:
         
         return pytesseract.image_to_string(processed, config='--psm 7 digits')
 
-    def detect_value(self, roi: np.ndarray, is_dark_background: bool = False) -> float:
+    def detect_value(self, roi: np.ndarray, is_dark_background: bool = True) -> float:
         text = self.detect_text(roi, is_dark_background)
         return self.extract_number(text)
