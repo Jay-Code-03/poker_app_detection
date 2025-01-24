@@ -17,7 +17,9 @@ class TextDetector:
 
     def detect_text(self, roi: np.ndarray) -> str:
 
-        processed = ImagePreprocessor.preprocess_for_ocr(roi)
+        #processed = ImagePreprocessor.preprocess_for_ocr(roi)
+        processed = roi
+
         
         return pytesseract.image_to_string(processed, config='--psm 7 digits')
 
