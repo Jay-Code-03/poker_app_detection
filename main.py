@@ -1,3 +1,4 @@
+import keyboard
 import os
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -8,6 +9,7 @@ import time
 from src.detector.template_matcher import TemplateMatcher
 from src.detector.table_detector import PokerTableDetector
 from src.utils.device_connector import DeviceConnector
+from src.utils.bot_controller import BotController
 
 
 class PokerDetectorApp:
@@ -15,6 +17,7 @@ class PokerDetectorApp:
         self.device = DeviceConnector.connect_device()
         self.template_matcher = TemplateMatcher('card_templates')
         self.table_detector = PokerTableDetector(self.template_matcher)
+        self.bot_controller = BotController()
 
     def capture_screen(self) -> np.ndarray:
         screenshot_data = self.device.screencap()
@@ -52,23 +55,55 @@ class PokerDetectorApp:
         cv2.destroyAllWindows()
 
     def run(self):
-        while True:
-            screen = self.capture_screen()
-            state = self.table_detector.detect_table_state(screen)
+        previous_state = None
+        
+        print("Bot started. Press ALT+Q to stop.")
+        
+        while self.bot_controller.should_continue():
+            try:
+                screen = self.capture_screen()
+                is_hero_turn = self.table_detector.detect_hero_turn(screen)
+                
+                if is_hero_turn:
+                    current_state = self.table_detector.detect_table_state(screen)
+                    
+                    if self._has_state_changed(previous_state, current_state):
+                        print("\n=== Table State ===")
+                        print("Hero cards:", [f"{c.rank}{c.suit}" for c in current_state['hero_cards']])
+                        print("Community cards:", [f"{c.rank}{c.suit}" for c in current_state['community_cards']])
+                        print(f"Hero stack: ${current_state['stacks']['hero']:.2f}")
+                        print(f"Villain stack: ${current_state['stacks']['villain']:.2f}")
+                        print(f"Hero bet: ${current_state['bets']['hero']:.2f}")
+                        print(f"Villain bet: ${current_state['bets']['villain']:.2f}")
+                        print(f"Pot size: ${current_state['pot_size']:.2f}")
+                        print(f"Button positions: {current_state['button_positions']}")
+                        print("================\n")
+                        
+                        previous_state = current_state
+                
+                time.sleep(1)
+                
+            except Exception as e:
+                print(f"Error occurred: {e}")
+                break
+        
+        self.cleanup()
+
+    def _has_state_changed(self, previous_state, current_state):
+        if previous_state is None:
+            return True
             
-            print("\n=== Table State ===")
-            print("Hero cards:", [f"{c.rank}{c.suit}" for c in state['hero_cards']])
-            print("Community cards:", [f"{c.rank}{c.suit}" for c in state['community_cards']])
-            print(f"Hero stack: ${state['stacks']['hero']:.2f}")
-            print(f"Villain stack: ${state['stacks']['villain']:.2f}")
-            print(f"Hero bet: ${state['bets']['hero']:.2f}")
-            print(f"Villain bet: ${state['bets']['villain']:.2f}")
-            print(f"Pot size: ${state['pot_size']:.2f}")
-            print(f"Button positions: {state['button_positions']}")
-            print(f"Is hero's turn: {state['is_hero_turn']}")
-            print("================\n")
-            
-            time.sleep(3)
+        # Compare relevant state components
+        return (
+            previous_state['hero_cards'] != current_state['hero_cards'] or
+            previous_state['community_cards'] != current_state['community_cards'] or
+            previous_state['bets'] != current_state['bets'] or
+            previous_state['pot_size'] != current_state['pot_size']
+        )
+    
+    def cleanup(self):
+        self.bot_controller.cleanup()
+        cv2.destroyAllWindows()
 
 def main():
     app = PokerDetectorApp()
