@@ -67,6 +67,32 @@ class PokerTableDetector:
         
         confidence, _ = self.template_matcher.match_template(roi, turn_template)
         return confidence > 0.8
+    
+    def is_preflop(self, screen: np.ndarray) -> bool:
+        """Determine if we're in preflop by checking for community cards"""
+        for region in COMMUNITY_CARD_REGIONS[:3]:  # Check first 3 cards (flop)
+            roi = screen[region['y1']:region['y2'], region['x1']:region['x2']]
+            card = self.detect_card(roi, is_hero=False)
+            if card:
+                return False
+        return True
+
+    def detect_pot_size(self, screen: np.ndarray) -> float:
+        """Detect pot size using appropriate region based on street"""
+        is_preflop_street = self.is_preflop(screen)
+        
+        # Try preflop region first if we're preflop
+        if is_preflop_street:
+            preflop_roi = screen[POT_REGION_PREFLOP['y1']:POT_REGION_PREFLOP['y2'], 
+                               POT_REGION_PREFLOP['x1']:POT_REGION_PREFLOP['x2']]
+            pot_size = self.text_detector.detect_value(preflop_roi)
+            if pot_size > 0:
+                return pot_size
+
+        # Try postflop region
+        postflop_roi = screen[POT_REGION_POSTFLOP['y1']:POT_REGION_POSTFLOP['y2'], 
+                            POT_REGION_POSTFLOP['x1']:POT_REGION_POSTFLOP['x2']]
+        return self.text_detector.detect_value(postflop_roi)
 
     def detect_table_state(self, screen: np.ndarray):
         # Detect hero cards
@@ -98,9 +124,7 @@ class PokerTableDetector:
             bets[player] = self.text_detector.detect_value(roi)
 
         # Detect pot
-        pot_roi = screen[POT_REGION['y1']:POT_REGION['y2'], 
-                        POT_REGION['x1']:POT_REGION['x2']]
-        pot_size = self.text_detector.detect_value(pot_roi)
+        pot_size = self.detect_pot_size(screen)
 
         # Add button detection
         button_positions = self.detect_button_position(screen)
@@ -115,6 +139,7 @@ class PokerTableDetector:
             'bets': bets,
             'pot_size': pot_size,
             'button_positions': button_positions,
-            'is_hero_turn': is_hero_turn
+            'is_hero_turn': is_hero_turn,
+            'is_preflop': self.is_preflop(screen)
         }
     

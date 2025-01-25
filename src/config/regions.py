@@ -26,6 +26,7 @@ BUTTON_REGIONS = {
     'hero': {'x1': 632, 'y1': 1347, 'x2': 688, 'y2': 1406}
 }
 
-POT_REGION = {'x1': 403, 'y1': 804, 'x2': 652, 'y2': 863}
+POT_REGION_PREFLOP = {'x1': 403, 'y1': 804, 'x2': 664, 'y2': 992}
+POT_REGION_POSTFLOP = {'x1': 403, 'y1': 804, 'x2': 652, 'y2': 863}
 
 HERO_TURN_REGION = {'x1':474, 'y1': 1521, 'x2': 618, 'y2': 1549}

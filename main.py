@@ -109,6 +109,7 @@ def main():
     app = PokerDetectorApp()
     print("Bot started. Press Ctrl+C to stop.")
     try:
+        #app.find_coordinates()
         app.run()
     except KeyboardInterrupt:
         print("\nShutting down gracefully...")
