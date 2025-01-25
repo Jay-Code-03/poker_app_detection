@@ -57,7 +57,7 @@ class PokerDetectorApp:
     def run(self):
         previous_state = None
         
-        print("Bot started. Press ALT+Q to stop.")
+        print("Bot started. Press ESC to stop.") 
         
         while self.bot_controller.should_continue():
             try:
@@ -107,8 +107,13 @@ class PokerDetectorApp:
 
 def main():
     app = PokerDetectorApp()
-    #app.find_coordinates()
-    app.run()
+    print("Bot started. Press Ctrl+C to stop.")
+    try:
+        app.run()
+    except KeyboardInterrupt:
+        print("\nShutting down gracefully...")
+    finally:
+        app.cleanup()
 
 if __name__ == "__main__":
     main()
