@@ -1,4 +1,3 @@
-import keyboard
 import os
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -24,40 +23,23 @@ class PokerDetectorApp:
         nparr = np.frombuffer(screenshot_data, np.uint8)
         return cv2.imdecode(nparr, cv2.IMREAD_COLOR)
 
-    def find_coordinates(self):
-        screen = self.capture_screen()
-        cv2.imwrite("poker_screenshot.png", screen)
-        
-        window_name = 'Card Coordinate Finder'
-        cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
-        cv2.resizeWindow(window_name, 800, 600)
-        
-        def mouse_callback(event, x, y, flags, param):
-            if event == cv2.EVENT_LBUTTONDOWN:
-                window_width = cv2.getWindowImageRect(window_name)[2]
-                window_height = cv2.getWindowImageRect(window_name)[3]
-                
-                scale_x = screen.shape[1] / window_width
-                scale_y = screen.shape[0] / window_height
-                
-                original_x = int(x * scale_x)
-                original_y = int(y * scale_y)
-                
-                print(f"Coordinates: x={original_x}, y={original_y}")
-        
-        cv2.setMouseCallback(window_name, mouse_callback)
-        
-        while True:
-            cv2.imshow(window_name, screen)
-            if cv2.waitKey(1) & 0xFF == ord('q'):
-                break
-        
-        cv2.destroyAllWindows()
+    def print_available_actions(self, actions):
+        print("\nAvailable Actions:")
+        if actions['FOLD']:
+            print("- FOLD")
+        if actions['CALL']:
+            print("- CALL")
+        if actions['CHECK']:
+            print("- CHECK")
+        if actions['R']:
+            print(f"- RAISE options: {actions['R']}")
+        if actions['B']:
+            print(f"- BET options: {actions['B']}")
 
     def run(self):
         previous_state = None
         
-        print("Bot started. Press ESC to stop.") 
+        print("Bot started. Press Ctrl+C to stop.") 
         
         while self.bot_controller.should_continue():
             try:
@@ -77,6 +59,10 @@ class PokerDetectorApp:
                         print(f"Villain bet: ${current_state['bets']['villain']:.2f}")
                         print(f"Pot size: ${current_state['pot_size']:.2f}")
                         print(f"Button positions: {current_state['button_positions']}")
+                        print("================")
+                        
+                        # Print available actions in a cleaner format
+                        self.print_available_actions(current_state['available_actions'])
                         print("================\n")
                         
                         previous_state = current_state
@@ -85,6 +71,8 @@ class PokerDetectorApp:
                 
             except Exception as e:
                 print(f"Error occurred: {e}")
+                import traceback
+                traceback.print_exc()  # This will print the full error trace
                 break
         
         self.cleanup()
@@ -98,7 +86,8 @@ class PokerDetectorApp:
             previous_state['hero_cards'] != current_state['hero_cards'] or
             previous_state['community_cards'] != current_state['community_cards'] or
             previous_state['bets'] != current_state['bets'] or
-            previous_state['pot_size'] != current_state['pot_size']
+            previous_state['pot_size'] != current_state['pot_size'] or
+            previous_state['available_actions'] != current_state['available_actions']  # Added this check
         )
     
     def cleanup(self):
@@ -107,9 +96,8 @@ class PokerDetectorApp:
 
 def main():
     app = PokerDetectorApp()
-    print("Bot started. Press Ctrl+C to stop.")
+
     try:
-        #app.find_coordinates()
         app.run()
     except KeyboardInterrupt:
         print("\nShutting down gracefully...")

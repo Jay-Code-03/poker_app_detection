@@ -6,11 +6,15 @@ from src.models.card import Card
 from src.detector.template_matcher import TemplateMatcher
 from src.detector.text_detector import TextDetector
 from src.config.regions import *
+from src.detector.action_button_detector import ActionButtonDetector
+from typing import List, Dict, Optional, Tuple
 
 class PokerTableDetector:
     def __init__(self, template_matcher: TemplateMatcher):
         self.template_matcher = template_matcher
         self.text_detector = TextDetector()
+        self.action_detector = ActionButtonDetector('card_templates/action_templates')
+
 
     def detect_card(self, roi: np.ndarray, is_hero: bool = False) -> Optional[Card]:
         best_rank = None
@@ -35,8 +39,7 @@ class PokerTableDetector:
 
         # Match suit
         for suit, template in suit_templates.items():
-            conf, _ = self.template_matcher.match_template(roi, template, 
-                                                         use_preprocessing=False)
+            conf, _ = self.template_matcher.match_template(roi, template,use_preprocessing=False)
             if conf > best_suit_conf:
                 best_suit_conf = conf
                 best_suit = suit
@@ -93,6 +96,70 @@ class PokerTableDetector:
         postflop_roi = screen[POT_REGION_POSTFLOP['y1']:POT_REGION_POSTFLOP['y2'], 
                             POT_REGION_POSTFLOP['x1']:POT_REGION_POSTFLOP['x2']]
         return self.text_detector.detect_value(postflop_roi)
+    
+    def process_action_detections(self, screen: np.ndarray, detections: List[Dict]) -> Dict:
+        """
+        Process raw action button detections into structured format
+        
+        Args:
+            screen (np.ndarray): The full screenshot
+            detections (List[Dict]): List of detected actions
+        """
+        available_actions = {
+            'FOLD': False,
+            'CALL': False,
+            'CHECK': False,
+            'R': [],
+            'B': []
+        }
+
+        # Group similar detections by position (within 5 pixels)
+        processed_positions = set()
+        
+        for detection in detections:
+            action_type = detection['type']
+            pos = detection['position']
+            
+            # Skip if we already processed a similar position
+            skip = False
+            for processed_pos in processed_positions:
+                if (abs(pos[0] - processed_pos[0]) < 5 and 
+                    abs(pos[1] - processed_pos[1]) < 5):
+                    skip = True
+                    break
+            if skip:
+                continue
+                
+            processed_positions.add(pos)
+            
+            if action_type in ['FOLD', 'CALL', 'CHECK']:
+                available_actions[action_type] = True
+            elif action_type in ['R', 'B']:
+                # Extract value from the button region
+                value = self.extract_action_value(screen, pos)
+                if value > 0:
+                    available_actions[action_type].append(value)
+
+        return available_actions
+
+    def extract_action_value(self, screen: np.ndarray, position: Tuple[int, int], debug: bool = False) -> float:
+        """
+        Extract numerical value from B/R buttons with optimized offsets
+        """
+        x, y = position
+        
+        # Update to the optimized offset values
+        value_roi_x1 = x + 45   # x_offset
+        value_roi_y1 = y - 5    # y_offset
+        value_roi_x2 = x + 160  # x_offset + width
+        value_roi_y2 = y + 50   # y_offset + height
+        
+        value_roi = screen[value_roi_y1:value_roi_y2, value_roi_x1:value_roi_x2]
+        
+        if debug:
+            cv2.imwrite(f'debug_value_roi_{x}_{y}.png', value_roi)
+        
+        return self.text_detector.detect_value(value_roi)
 
     def detect_table_state(self, screen: np.ndarray):
         # Detect hero cards
@@ -130,7 +197,12 @@ class PokerTableDetector:
         button_positions = self.detect_button_position(screen)
         
         # Add hero turn detection
-        is_hero_turn = self.detect_hero_turn(screen)
+        is_hero_turn = self.detect_hero_turn(screen)  
+
+         # Add action button detection
+        action_detections = self.action_detector.detect_action_buttons(screen)
+        available_actions = self.process_action_detections(screen, action_detections)  # Pass screen here
+    
 
         return {
             'hero_cards': hero_cards,
@@ -140,6 +212,7 @@ class PokerTableDetector:
             'pot_size': pot_size,
             'button_positions': button_positions,
             'is_hero_turn': is_hero_turn,
-            'is_preflop': self.is_preflop(screen)
+            'is_preflop': self.is_preflop(screen),
+            'available_actions': available_actions
         }
     
