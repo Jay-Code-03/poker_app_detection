@@ -61,6 +61,19 @@ class PokerTableDetector:
         
         return button_positions
     
+    def detect_positions(self, button_positions: dict) -> dict:
+        """Determine player positions based on button location"""
+        positions = {'SB': None, 'BB': None}
+        
+        if button_positions['hero']:
+            positions['SB'] = 'hero'
+            positions['BB'] = 'villain'
+        elif button_positions['villain']:
+            positions['SB'] = 'villain'
+            positions['BB'] = 'hero'
+            
+        return positions    
+    
     def detect_hero_turn(self, screen: np.ndarray) -> bool:
         # Load hero turn template
         turn_template = cv2.imread(os.path.join(self.template_matcher.template_path,'object_templates/hero_turn.png'))
@@ -79,6 +92,21 @@ class PokerTableDetector:
             if card:
                 return False
         return True
+    
+    def detect_street(self, community_cards: List[Card]) -> str:
+        """Determine the current street based on number of community cards"""
+        num_cards = len(community_cards)
+        
+        if num_cards == 0:
+            return "Preflop"
+        elif num_cards == 3:
+            return "Flop"
+        elif num_cards == 4:
+            return "Turn"
+        elif num_cards == 5:
+            return "River"
+        else:
+            return "Unknown"
 
     def detect_pot_size(self, screen: np.ndarray) -> float:
         """Detect pot size using appropriate region based on street"""
@@ -193,8 +221,12 @@ class PokerTableDetector:
         # Detect pot
         pot_size = self.detect_pot_size(screen)
 
-        # Add button detection
+        # Detect button positions and determine player positions
         button_positions = self.detect_button_position(screen)
+        positions = self.detect_positions(button_positions)
+        
+        # Determine street
+        street = self.detect_street(community_cards)
         
         # Add hero turn detection
         is_hero_turn = self.detect_hero_turn(screen)  
@@ -211,8 +243,9 @@ class PokerTableDetector:
             'bets': bets,
             'pot_size': pot_size,
             'button_positions': button_positions,
+            'positions': positions,
             'is_hero_turn': is_hero_turn,
-            'is_preflop': self.is_preflop(screen),
+            'street': street,
             'available_actions': available_actions
         }
     

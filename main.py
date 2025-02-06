@@ -51,6 +51,7 @@ class PokerDetectorApp:
                     
                     if self._has_state_changed(previous_state, current_state):
                         print("\n=== Table State ===")
+                        print(f"Street: {current_state['street']}")
                         print("Hero cards:", [f"{c.rank}{c.suit}" for c in current_state['hero_cards']])
                         print("Community cards:", [f"{c.rank}{c.suit}" for c in current_state['community_cards']])
                         print(f"Hero stack: ${current_state['stacks']['hero']:.2f}")
@@ -58,6 +59,7 @@ class PokerDetectorApp:
                         print(f"Hero bet: ${current_state['bets']['hero']:.2f}")
                         print(f"Villain bet: ${current_state['bets']['villain']:.2f}")
                         print(f"Pot size: ${current_state['pot_size']:.2f}")
+                        print(f"Positions: {current_state['positions']}")
                         print(f"Button positions: {current_state['button_positions']}")
                         print("================")
                         
@@ -87,7 +89,9 @@ class PokerDetectorApp:
             previous_state['community_cards'] != current_state['community_cards'] or
             previous_state['bets'] != current_state['bets'] or
             previous_state['pot_size'] != current_state['pot_size'] or
-            previous_state['available_actions'] != current_state['available_actions']  # Added this check
+            previous_state['street'] != current_state['street'] or
+            previous_state['available_actions'] != current_state['available_actions'] or
+            previous_state['positions'] != current_state['positions']
         )
     
     def cleanup(self):
