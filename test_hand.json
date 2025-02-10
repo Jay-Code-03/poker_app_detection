@@ -1,0 +1,4633 @@
+[
+    {
+        "gamecode": "10136070425",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 10.0,
+            "big_blind": 20.0,
+            "ante": 0.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 500.0,
+            "Bekocabron": 500.0,
+            "mmpq8j6x8": 500.0
+        },
+        "pot_size": 30.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "GGM3M",
+            "action_type": 3,
+            "action_sum": 10.0,
+            "action_no": 2
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "C10",
+            "D5"
+        ],
+        "actor_stack_size": 500.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136070425",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 10.0,
+            "big_blind": 20.0,
+            "ante": 0.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 500.0,
+            "Bekocabron": 500.0,
+            "mmpq8j6x8": 500.0
+        },
+        "pot_size": 40.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 3,
+                "action_sum": 10.0,
+                "action_no": 2,
+                "player_position": 0
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "Bekocabron",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 3
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "D3",
+            "D6"
+        ],
+        "actor_stack_size": 500.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070425",
+        "round_no": 2,
+        "current_street": "flop",
+        "blinds": {
+            "small_blind": 10.0,
+            "big_blind": 20.0,
+            "ante": 0.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 500.0,
+            "Bekocabron": 500.0,
+            "mmpq8j6x8": 500.0
+        },
+        "pot_size": 40.0,
+        "board_cards": [
+            "S4",
+            "S8",
+            "DJ"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 3,
+                "action_sum": 10.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 2,
+            "player": "GGM3M",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 4
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "C10",
+            "D5"
+        ],
+        "actor_stack_size": 500.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136070425",
+        "round_no": 2,
+        "current_street": "flop",
+        "blinds": {
+            "small_blind": 10.0,
+            "big_blind": 20.0,
+            "ante": 0.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 500.0,
+            "Bekocabron": 500.0,
+            "mmpq8j6x8": 500.0
+        },
+        "pot_size": 40.0,
+        "board_cards": [
+            "S4",
+            "S8",
+            "DJ"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 3,
+                "action_sum": 10.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 4,
+                "player_position": 0
+            }
+        ],
+        "action": {
+            "round": 2,
+            "player": "Bekocabron",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 5
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "D3",
+            "D6"
+        ],
+        "actor_stack_size": 500.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070425",
+        "round_no": 3,
+        "current_street": "turn",
+        "blinds": {
+            "small_blind": 10.0,
+            "big_blind": 20.0,
+            "ante": 0.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 500.0,
+            "Bekocabron": 500.0,
+            "mmpq8j6x8": 500.0
+        },
+        "pot_size": 40.0,
+        "board_cards": [
+            "S4",
+            "S8",
+            "DJ",
+            "CA"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 3,
+                "action_sum": 10.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 4,
+                "player_position": 0
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 5,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 3,
+            "player": "GGM3M",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 6
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "C10",
+            "D5"
+        ],
+        "actor_stack_size": 500.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136070425",
+        "round_no": 3,
+        "current_street": "turn",
+        "blinds": {
+            "small_blind": 10.0,
+            "big_blind": 20.0,
+            "ante": 0.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 500.0,
+            "Bekocabron": 500.0,
+            "mmpq8j6x8": 500.0
+        },
+        "pot_size": 40.0,
+        "board_cards": [
+            "S4",
+            "S8",
+            "DJ",
+            "CA"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 3,
+                "action_sum": 10.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 4,
+                "player_position": 0
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 5,
+                "player_position": 1
+            },
+            {
+                "round": 3,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 6,
+                "player_position": 0
+            }
+        ],
+        "action": {
+            "round": 3,
+            "player": "Bekocabron",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 7
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "D3",
+            "D6"
+        ],
+        "actor_stack_size": 500.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070425",
+        "round_no": 4,
+        "current_street": "river",
+        "blinds": {
+            "small_blind": 10.0,
+            "big_blind": 20.0,
+            "ante": 0.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 500.0,
+            "Bekocabron": 500.0,
+            "mmpq8j6x8": 500.0
+        },
+        "pot_size": 40.0,
+        "board_cards": [
+            "S4",
+            "S8",
+            "DJ",
+            "CA",
+            "D7"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 3,
+                "action_sum": 10.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 4,
+                "player_position": 0
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 5,
+                "player_position": 1
+            },
+            {
+                "round": 3,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 6,
+                "player_position": 0
+            },
+            {
+                "round": 3,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 7,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 4,
+            "player": "GGM3M",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 8
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "C10",
+            "D5"
+        ],
+        "actor_stack_size": 500.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136070425",
+        "round_no": 4,
+        "current_street": "river",
+        "blinds": {
+            "small_blind": 10.0,
+            "big_blind": 20.0,
+            "ante": 0.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 500.0,
+            "Bekocabron": 500.0,
+            "mmpq8j6x8": 500.0
+        },
+        "pot_size": 40.0,
+        "board_cards": [
+            "S4",
+            "S8",
+            "DJ",
+            "CA",
+            "D7"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 3,
+                "action_sum": 10.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 4,
+                "player_position": 0
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 5,
+                "player_position": 1
+            },
+            {
+                "round": 3,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 6,
+                "player_position": 0
+            },
+            {
+                "round": 3,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 7,
+                "player_position": 1
+            },
+            {
+                "round": 4,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 8,
+                "player_position": 0
+            }
+        ],
+        "action": {
+            "round": 4,
+            "player": "Bekocabron",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 9
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "D3",
+            "D6"
+        ],
+        "actor_stack_size": 500.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070480",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 10.0,
+            "big_blind": 20.0,
+            "ante": 0.0
+        },
+        "player_positions": {
+            "Bekocabron": 0,
+            "mmpq8j6x8": 1,
+            "GGM3M": 2
+        },
+        "player_stacks": {
+            "GGM3M": 520.0,
+            "Bekocabron": 480.0,
+            "mmpq8j6x8": 500.0
+        },
+        "pot_size": 30.0,
+        "board_cards": [],
+        "previous_actions": [],
+        "action": {
+            "round": 1,
+            "player": "GGM3M",
+            "action_type": 23,
+            "action_sum": 520.0,
+            "action_no": 1
+        },
+        "players_remaining": 3,
+        "is_button": true,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 520.0,
+        "actor_position": 2
+    },
+    {
+        "gamecode": "10136070480",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 10.0,
+            "big_blind": 20.0,
+            "ante": 0.0
+        },
+        "player_positions": {
+            "Bekocabron": 0,
+            "mmpq8j6x8": 1,
+            "GGM3M": 2
+        },
+        "player_stacks": {
+            "GGM3M": 520.0,
+            "Bekocabron": 480.0,
+            "mmpq8j6x8": 500.0
+        },
+        "pot_size": 550.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 23,
+                "action_sum": 520.0,
+                "action_no": 1,
+                "player_position": 2
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "Bekocabron",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 2
+        },
+        "players_remaining": 3,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 480.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136070507",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 10.0,
+            "big_blind": 20.0,
+            "ante": 0.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 550.0,
+            "Bekocabron": 470.0,
+            "mmpq8j6x8": 480.0
+        },
+        "pot_size": 30.0,
+        "board_cards": [],
+        "previous_actions": [],
+        "action": {
+            "round": 1,
+            "player": "Bekocabron",
+            "action_type": 3,
+            "action_sum": 20.0,
+            "action_no": 1
+        },
+        "players_remaining": 3,
+        "is_button": true,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 470.0,
+        "actor_position": 2
+    },
+    {
+        "gamecode": "10136070507",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 10.0,
+            "big_blind": 20.0,
+            "ante": 0.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 550.0,
+            "Bekocabron": 470.0,
+            "mmpq8j6x8": 480.0
+        },
+        "pot_size": 530.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 20.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 480.0,
+                "action_no": 2,
+                "player_position": 0
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "GGM3M",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 3
+        },
+        "players_remaining": 3,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 550.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070507",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 10.0,
+            "big_blind": 20.0,
+            "ante": 0.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 550.0,
+            "Bekocabron": 470.0,
+            "mmpq8j6x8": 480.0
+        },
+        "pot_size": 530.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 20.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 480.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "Bekocabron",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 4
+        },
+        "players_remaining": 2,
+        "is_button": true,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 470.0,
+        "actor_position": 2
+    },
+    {
+        "gamecode": "10136070540",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 10.0,
+            "big_blind": 20.0,
+            "ante": 0.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 530.0,
+            "Bekocabron": 450.0,
+            "mmpq8j6x8": 520.0
+        },
+        "pot_size": 70.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 40.0,
+                "action_no": 1,
+                "player_position": 2
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "GGM3M",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 2
+        },
+        "players_remaining": 3,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 530.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136070540",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 10.0,
+            "big_blind": 20.0,
+            "ante": 0.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 530.0,
+            "Bekocabron": 450.0,
+            "mmpq8j6x8": 520.0
+        },
+        "pot_size": 70.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 40.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "Bekocabron",
+            "action_type": 3,
+            "action_sum": 20.0,
+            "action_no": 3
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 450.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070540",
+        "round_no": 2,
+        "current_street": "flop",
+        "blinds": {
+            "small_blind": 10.0,
+            "big_blind": 20.0,
+            "ante": 0.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 530.0,
+            "Bekocabron": 450.0,
+            "mmpq8j6x8": 520.0
+        },
+        "pot_size": 90.0,
+        "board_cards": [
+            "S3",
+            "S10",
+            "C2"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 40.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 20.0,
+                "action_no": 3,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 2,
+            "player": "Bekocabron",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 4
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 450.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070540",
+        "round_no": 2,
+        "current_street": "flop",
+        "blinds": {
+            "small_blind": 10.0,
+            "big_blind": 20.0,
+            "ante": 0.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 530.0,
+            "Bekocabron": 450.0,
+            "mmpq8j6x8": 520.0
+        },
+        "pot_size": 117.0,
+        "board_cards": [
+            "S3",
+            "S10",
+            "C2"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 40.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 20.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 4,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "mmpq8j6x8",
+                "action_type": 5,
+                "action_sum": 27.0,
+                "action_no": 5,
+                "player_position": 2
+            }
+        ],
+        "action": {
+            "round": 2,
+            "player": "Bekocabron",
+            "action_type": 3,
+            "action_sum": 27.0,
+            "action_no": 6
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 450.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070540",
+        "round_no": 3,
+        "current_street": "turn",
+        "blinds": {
+            "small_blind": 10.0,
+            "big_blind": 20.0,
+            "ante": 0.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 530.0,
+            "Bekocabron": 450.0,
+            "mmpq8j6x8": 520.0
+        },
+        "pot_size": 144.0,
+        "board_cards": [
+            "S3",
+            "S10",
+            "C2",
+            "H9"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 40.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 20.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 4,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "mmpq8j6x8",
+                "action_type": 5,
+                "action_sum": 27.0,
+                "action_no": 5,
+                "player_position": 2
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 27.0,
+                "action_no": 6,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 3,
+            "player": "Bekocabron",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 7
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 450.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070540",
+        "round_no": 3,
+        "current_street": "turn",
+        "blinds": {
+            "small_blind": 10.0,
+            "big_blind": 20.0,
+            "ante": 0.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 530.0,
+            "Bekocabron": 450.0,
+            "mmpq8j6x8": 520.0
+        },
+        "pot_size": 216.0,
+        "board_cards": [
+            "S3",
+            "S10",
+            "C2",
+            "H9"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 40.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 20.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 4,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "mmpq8j6x8",
+                "action_type": 5,
+                "action_sum": 27.0,
+                "action_no": 5,
+                "player_position": 2
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 27.0,
+                "action_no": 6,
+                "player_position": 1
+            },
+            {
+                "round": 3,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 7,
+                "player_position": 1
+            },
+            {
+                "round": 3,
+                "player": "mmpq8j6x8",
+                "action_type": 5,
+                "action_sum": 72.0,
+                "action_no": 8,
+                "player_position": 2
+            }
+        ],
+        "action": {
+            "round": 3,
+            "player": "Bekocabron",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 9
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 450.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070595",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 15.0,
+            "big_blind": 30.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "Bekocabron": 0,
+            "mmpq8j6x8": 1,
+            "GGM3M": 2
+        },
+        "player_stacks": {
+            "GGM3M": 520.0,
+            "Bekocabron": 383.0,
+            "mmpq8j6x8": 597.0
+        },
+        "pot_size": 60.0,
+        "board_cards": [],
+        "previous_actions": [],
+        "action": {
+            "round": 1,
+            "player": "GGM3M",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 1
+        },
+        "players_remaining": 3,
+        "is_button": true,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 520.0,
+        "actor_position": 2
+    },
+    {
+        "gamecode": "10136070595",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 15.0,
+            "big_blind": 30.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "Bekocabron": 0,
+            "mmpq8j6x8": 1,
+            "GGM3M": 2
+        },
+        "player_stacks": {
+            "GGM3M": 520.0,
+            "Bekocabron": 383.0,
+            "mmpq8j6x8": 597.0
+        },
+        "pot_size": 60.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "Bekocabron",
+            "action_type": 3,
+            "action_sum": 15.0,
+            "action_no": 2
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 383.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136070595",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 15.0,
+            "big_blind": 30.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "Bekocabron": 0,
+            "mmpq8j6x8": 1,
+            "GGM3M": 2
+        },
+        "player_stacks": {
+            "GGM3M": 520.0,
+            "Bekocabron": 383.0,
+            "mmpq8j6x8": 597.0
+        },
+        "pot_size": 667.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 15.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 592.0,
+                "action_no": 3,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "Bekocabron",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 4
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 383.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136070624",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 15.0,
+            "big_blind": 30.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 515.0,
+            "Bekocabron": 348.0,
+            "mmpq8j6x8": 637.0
+        },
+        "pot_size": 60.0,
+        "board_cards": [],
+        "previous_actions": [],
+        "action": {
+            "round": 1,
+            "player": "Bekocabron",
+            "action_type": 3,
+            "action_sum": 30.0,
+            "action_no": 1
+        },
+        "players_remaining": 3,
+        "is_button": true,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 348.0,
+        "actor_position": 2
+    },
+    {
+        "gamecode": "10136070624",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 15.0,
+            "big_blind": 30.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 515.0,
+            "Bekocabron": 348.0,
+            "mmpq8j6x8": 637.0
+        },
+        "pot_size": 90.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 30.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "GGM3M",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 3
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 515.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070624",
+        "round_no": 2,
+        "current_street": "flop",
+        "blinds": {
+            "small_blind": 15.0,
+            "big_blind": 30.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 515.0,
+            "Bekocabron": 348.0,
+            "mmpq8j6x8": 637.0
+        },
+        "pot_size": 90.0,
+        "board_cards": [
+            "H3",
+            "DK",
+            "D4"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 30.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 2,
+            "player": "GGM3M",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 4
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 515.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070624",
+        "round_no": 2,
+        "current_street": "flop",
+        "blinds": {
+            "small_blind": 15.0,
+            "big_blind": 30.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 515.0,
+            "Bekocabron": 348.0,
+            "mmpq8j6x8": 637.0
+        },
+        "pot_size": 90.0,
+        "board_cards": [
+            "H3",
+            "DK",
+            "D4"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 30.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 4,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 2,
+            "player": "Bekocabron",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 5
+        },
+        "players_remaining": 2,
+        "is_button": true,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 348.0,
+        "actor_position": 2
+    },
+    {
+        "gamecode": "10136070624",
+        "round_no": 3,
+        "current_street": "turn",
+        "blinds": {
+            "small_blind": 15.0,
+            "big_blind": 30.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 515.0,
+            "Bekocabron": 348.0,
+            "mmpq8j6x8": 637.0
+        },
+        "pot_size": 90.0,
+        "board_cards": [
+            "H3",
+            "DK",
+            "D4",
+            "D3"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 30.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 4,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 5,
+                "player_position": 2
+            }
+        ],
+        "action": {
+            "round": 3,
+            "player": "GGM3M",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 6
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 515.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070624",
+        "round_no": 3,
+        "current_street": "turn",
+        "blinds": {
+            "small_blind": 15.0,
+            "big_blind": 30.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 515.0,
+            "Bekocabron": 348.0,
+            "mmpq8j6x8": 637.0
+        },
+        "pot_size": 90.0,
+        "board_cards": [
+            "H3",
+            "DK",
+            "D4",
+            "D3"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 30.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 4,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 5,
+                "player_position": 2
+            },
+            {
+                "round": 3,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 6,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 3,
+            "player": "Bekocabron",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 7
+        },
+        "players_remaining": 2,
+        "is_button": true,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 348.0,
+        "actor_position": 2
+    },
+    {
+        "gamecode": "10136070624",
+        "round_no": 4,
+        "current_street": "river",
+        "blinds": {
+            "small_blind": 15.0,
+            "big_blind": 30.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 515.0,
+            "Bekocabron": 348.0,
+            "mmpq8j6x8": 637.0
+        },
+        "pot_size": 90.0,
+        "board_cards": [
+            "H3",
+            "DK",
+            "D4",
+            "D3",
+            "D8"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 30.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 4,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 5,
+                "player_position": 2
+            },
+            {
+                "round": 3,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 6,
+                "player_position": 1
+            },
+            {
+                "round": 3,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 7,
+                "player_position": 2
+            }
+        ],
+        "action": {
+            "round": 4,
+            "player": "GGM3M",
+            "action_type": 5,
+            "action_sum": 30.0,
+            "action_no": 8
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 515.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070624",
+        "round_no": 4,
+        "current_street": "river",
+        "blinds": {
+            "small_blind": 15.0,
+            "big_blind": 30.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 515.0,
+            "Bekocabron": 348.0,
+            "mmpq8j6x8": 637.0
+        },
+        "pot_size": 120.0,
+        "board_cards": [
+            "H3",
+            "DK",
+            "D4",
+            "D3",
+            "D8"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 30.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 4,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 5,
+                "player_position": 2
+            },
+            {
+                "round": 3,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 6,
+                "player_position": 1
+            },
+            {
+                "round": 3,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 7,
+                "player_position": 2
+            },
+            {
+                "round": 4,
+                "player": "GGM3M",
+                "action_type": 5,
+                "action_sum": 30.0,
+                "action_no": 8,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 4,
+            "player": "Bekocabron",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 9
+        },
+        "players_remaining": 2,
+        "is_button": true,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 348.0,
+        "actor_position": 2
+    },
+    {
+        "gamecode": "10136070661",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 15.0,
+            "big_blind": 30.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 570.0,
+            "Bekocabron": 313.0,
+            "mmpq8j6x8": 617.0
+        },
+        "pot_size": 60.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "GGM3M",
+            "action_type": 3,
+            "action_sum": 15.0,
+            "action_no": 2
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 570.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136070661",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 15.0,
+            "big_blind": 30.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 570.0,
+            "Bekocabron": 313.0,
+            "mmpq8j6x8": 617.0
+        },
+        "pot_size": 75.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 3,
+                "action_sum": 15.0,
+                "action_no": 2,
+                "player_position": 0
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "Bekocabron",
+            "action_type": 23,
+            "action_sum": 60.0,
+            "action_no": 3
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 313.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070661",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 15.0,
+            "big_blind": 30.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 570.0,
+            "Bekocabron": 313.0,
+            "mmpq8j6x8": 617.0
+        },
+        "pot_size": 135.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 3,
+                "action_sum": 15.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 23,
+                "action_sum": 60.0,
+                "action_no": 3,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "GGM3M",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 4
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 570.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136070680",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 15.0,
+            "big_blind": 30.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "Bekocabron": 0,
+            "mmpq8j6x8": 1,
+            "GGM3M": 2
+        },
+        "player_stacks": {
+            "GGM3M": 535.0,
+            "Bekocabron": 353.0,
+            "mmpq8j6x8": 612.0
+        },
+        "pot_size": 60.0,
+        "board_cards": [],
+        "previous_actions": [],
+        "action": {
+            "round": 1,
+            "player": "GGM3M",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 1
+        },
+        "players_remaining": 3,
+        "is_button": true,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 535.0,
+        "actor_position": 2
+    },
+    {
+        "gamecode": "10136070680",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 15.0,
+            "big_blind": 30.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "Bekocabron": 0,
+            "mmpq8j6x8": 1,
+            "GGM3M": 2
+        },
+        "player_stacks": {
+            "GGM3M": 535.0,
+            "Bekocabron": 353.0,
+            "mmpq8j6x8": 612.0
+        },
+        "pot_size": 60.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "Bekocabron",
+            "action_type": 3,
+            "action_sum": 15.0,
+            "action_no": 2
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 353.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136070680",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 15.0,
+            "big_blind": 30.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "Bekocabron": 0,
+            "mmpq8j6x8": 1,
+            "GGM3M": 2
+        },
+        "player_stacks": {
+            "GGM3M": 535.0,
+            "Bekocabron": 353.0,
+            "mmpq8j6x8": 612.0
+        },
+        "pot_size": 135.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 15.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 60.0,
+                "action_no": 3,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "Bekocabron",
+            "action_type": 3,
+            "action_sum": 30.0,
+            "action_no": 4
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 353.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136070680",
+        "round_no": 2,
+        "current_street": "flop",
+        "blinds": {
+            "small_blind": 15.0,
+            "big_blind": 30.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "Bekocabron": 0,
+            "mmpq8j6x8": 1,
+            "GGM3M": 2
+        },
+        "player_stacks": {
+            "GGM3M": 535.0,
+            "Bekocabron": 353.0,
+            "mmpq8j6x8": 612.0
+        },
+        "pot_size": 165.0,
+        "board_cards": [
+            "SQ",
+            "HQ",
+            "DQ"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 15.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 60.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 30.0,
+                "action_no": 4,
+                "player_position": 0
+            }
+        ],
+        "action": {
+            "round": 2,
+            "player": "Bekocabron",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 5
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 353.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136070680",
+        "round_no": 3,
+        "current_street": "turn",
+        "blinds": {
+            "small_blind": 15.0,
+            "big_blind": 30.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "Bekocabron": 0,
+            "mmpq8j6x8": 1,
+            "GGM3M": 2
+        },
+        "player_stacks": {
+            "GGM3M": 535.0,
+            "Bekocabron": 353.0,
+            "mmpq8j6x8": 612.0
+        },
+        "pot_size": 165.0,
+        "board_cards": [
+            "SQ",
+            "HQ",
+            "DQ",
+            "D8"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 15.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 60.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 30.0,
+                "action_no": 4,
+                "player_position": 0
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 5,
+                "player_position": 0
+            },
+            {
+                "round": 2,
+                "player": "mmpq8j6x8",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 6,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 3,
+            "player": "Bekocabron",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 7
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 353.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136070680",
+        "round_no": 4,
+        "current_street": "river",
+        "blinds": {
+            "small_blind": 15.0,
+            "big_blind": 30.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "Bekocabron": 0,
+            "mmpq8j6x8": 1,
+            "GGM3M": 2
+        },
+        "player_stacks": {
+            "GGM3M": 535.0,
+            "Bekocabron": 353.0,
+            "mmpq8j6x8": 612.0
+        },
+        "pot_size": 165.0,
+        "board_cards": [
+            "SQ",
+            "HQ",
+            "DQ",
+            "D8",
+            "H7"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 15.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 60.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 30.0,
+                "action_no": 4,
+                "player_position": 0
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 5,
+                "player_position": 0
+            },
+            {
+                "round": 2,
+                "player": "mmpq8j6x8",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 6,
+                "player_position": 1
+            },
+            {
+                "round": 3,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 7,
+                "player_position": 0
+            },
+            {
+                "round": 3,
+                "player": "mmpq8j6x8",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 8,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 4,
+            "player": "Bekocabron",
+            "action_type": 5,
+            "action_sum": 135.0,
+            "action_no": 9
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 353.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136070744",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 20.0,
+            "big_blind": 40.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 530.0,
+            "Bekocabron": 423.0,
+            "mmpq8j6x8": 547.0
+        },
+        "pot_size": 75.0,
+        "board_cards": [],
+        "previous_actions": [],
+        "action": {
+            "round": 1,
+            "player": "Bekocabron",
+            "action_type": 3,
+            "action_sum": 40.0,
+            "action_no": 1
+        },
+        "players_remaining": 3,
+        "is_button": true,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 423.0,
+        "actor_position": 2
+    },
+    {
+        "gamecode": "10136070744",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 20.0,
+            "big_blind": 40.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 530.0,
+            "Bekocabron": 423.0,
+            "mmpq8j6x8": 547.0
+        },
+        "pot_size": 115.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 40.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "GGM3M",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 3
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 530.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070744",
+        "round_no": 2,
+        "current_street": "flop",
+        "blinds": {
+            "small_blind": 20.0,
+            "big_blind": 40.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 530.0,
+            "Bekocabron": 423.0,
+            "mmpq8j6x8": 547.0
+        },
+        "pot_size": 115.0,
+        "board_cards": [
+            "S6",
+            "S8",
+            "CJ"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 40.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 2,
+            "player": "GGM3M",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 4
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 530.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070744",
+        "round_no": 2,
+        "current_street": "flop",
+        "blinds": {
+            "small_blind": 20.0,
+            "big_blind": 40.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 530.0,
+            "Bekocabron": 423.0,
+            "mmpq8j6x8": 547.0
+        },
+        "pot_size": 115.0,
+        "board_cards": [
+            "S6",
+            "S8",
+            "CJ"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 40.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 4,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 2,
+            "player": "Bekocabron",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 5
+        },
+        "players_remaining": 2,
+        "is_button": true,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 423.0,
+        "actor_position": 2
+    },
+    {
+        "gamecode": "10136070744",
+        "round_no": 3,
+        "current_street": "turn",
+        "blinds": {
+            "small_blind": 20.0,
+            "big_blind": 40.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 530.0,
+            "Bekocabron": 423.0,
+            "mmpq8j6x8": 547.0
+        },
+        "pot_size": 115.0,
+        "board_cards": [
+            "S6",
+            "S8",
+            "CJ",
+            "C5"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 40.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 4,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 5,
+                "player_position": 2
+            }
+        ],
+        "action": {
+            "round": 3,
+            "player": "GGM3M",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 6
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 530.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070744",
+        "round_no": 3,
+        "current_street": "turn",
+        "blinds": {
+            "small_blind": 20.0,
+            "big_blind": 40.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 530.0,
+            "Bekocabron": 423.0,
+            "mmpq8j6x8": 547.0
+        },
+        "pot_size": 115.0,
+        "board_cards": [
+            "S6",
+            "S8",
+            "CJ",
+            "C5"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 40.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 4,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 5,
+                "player_position": 2
+            },
+            {
+                "round": 3,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 6,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 3,
+            "player": "Bekocabron",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 7
+        },
+        "players_remaining": 2,
+        "is_button": true,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 423.0,
+        "actor_position": 2
+    },
+    {
+        "gamecode": "10136070744",
+        "round_no": 4,
+        "current_street": "river",
+        "blinds": {
+            "small_blind": 20.0,
+            "big_blind": 40.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 530.0,
+            "Bekocabron": 423.0,
+            "mmpq8j6x8": 547.0
+        },
+        "pot_size": 115.0,
+        "board_cards": [
+            "S6",
+            "S8",
+            "CJ",
+            "C5",
+            "S9"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 40.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 4,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 5,
+                "player_position": 2
+            },
+            {
+                "round": 3,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 6,
+                "player_position": 1
+            },
+            {
+                "round": 3,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 7,
+                "player_position": 2
+            }
+        ],
+        "action": {
+            "round": 4,
+            "player": "GGM3M",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 8
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 530.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070744",
+        "round_no": 4,
+        "current_street": "river",
+        "blinds": {
+            "small_blind": 20.0,
+            "big_blind": 40.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 530.0,
+            "Bekocabron": 423.0,
+            "mmpq8j6x8": 547.0
+        },
+        "pot_size": 115.0,
+        "board_cards": [
+            "S6",
+            "S8",
+            "CJ",
+            "C5",
+            "S9"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 40.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 4,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 5,
+                "player_position": 2
+            },
+            {
+                "round": 3,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 6,
+                "player_position": 1
+            },
+            {
+                "round": 3,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 7,
+                "player_position": 2
+            },
+            {
+                "round": 4,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 8,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 4,
+            "player": "Bekocabron",
+            "action_type": 5,
+            "action_sum": 40.0,
+            "action_no": 9
+        },
+        "players_remaining": 2,
+        "is_button": true,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 423.0,
+        "actor_position": 2
+    },
+    {
+        "gamecode": "10136070744",
+        "round_no": 4,
+        "current_street": "river",
+        "blinds": {
+            "small_blind": 20.0,
+            "big_blind": 40.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 530.0,
+            "Bekocabron": 423.0,
+            "mmpq8j6x8": 547.0
+        },
+        "pot_size": 155.0,
+        "board_cards": [
+            "S6",
+            "S8",
+            "CJ",
+            "C5",
+            "S9"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 40.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 4,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 5,
+                "player_position": 2
+            },
+            {
+                "round": 3,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 6,
+                "player_position": 1
+            },
+            {
+                "round": 3,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 7,
+                "player_position": 2
+            },
+            {
+                "round": 4,
+                "player": "GGM3M",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 8,
+                "player_position": 1
+            },
+            {
+                "round": 4,
+                "player": "Bekocabron",
+                "action_type": 5,
+                "action_sum": 40.0,
+                "action_no": 9,
+                "player_position": 2
+            }
+        ],
+        "action": {
+            "round": 4,
+            "player": "GGM3M",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 10
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 530.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070815",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 20.0,
+            "big_blind": 40.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 485.0,
+            "Bekocabron": 493.0,
+            "mmpq8j6x8": 522.0
+        },
+        "pot_size": 592.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 517.0,
+                "action_no": 1,
+                "player_position": 2
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "GGM3M",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 2
+        },
+        "players_remaining": 3,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 485.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136070815",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 20.0,
+            "big_blind": 40.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 485.0,
+            "Bekocabron": 493.0,
+            "mmpq8j6x8": 522.0
+        },
+        "pot_size": 592.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 517.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "Bekocabron",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 3
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 493.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136070835",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 30.0,
+            "big_blind": 60.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "Bekocabron": 0,
+            "mmpq8j6x8": 1,
+            "GGM3M": 2
+        },
+        "player_stacks": {
+            "GGM3M": 460.0,
+            "Bekocabron": 448.0,
+            "mmpq8j6x8": 592.0
+        },
+        "pot_size": 105.0,
+        "board_cards": [],
+        "previous_actions": [],
+        "action": {
+            "round": 1,
+            "player": "GGM3M",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 1
+        },
+        "players_remaining": 3,
+        "is_button": true,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 460.0,
+        "actor_position": 2
+    },
+    {
+        "gamecode": "10136070835",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 30.0,
+            "big_blind": 60.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "Bekocabron": 0,
+            "mmpq8j6x8": 1,
+            "GGM3M": 2
+        },
+        "player_stacks": {
+            "GGM3M": 460.0,
+            "Bekocabron": 448.0,
+            "mmpq8j6x8": 592.0
+        },
+        "pot_size": 105.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "Bekocabron",
+            "action_type": 3,
+            "action_sum": 30.0,
+            "action_no": 2
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 448.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136070835",
+        "round_no": 2,
+        "current_street": "flop",
+        "blinds": {
+            "small_blind": 30.0,
+            "big_blind": 60.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "Bekocabron": 0,
+            "mmpq8j6x8": 1,
+            "GGM3M": 2
+        },
+        "player_stacks": {
+            "GGM3M": 460.0,
+            "Bekocabron": 448.0,
+            "mmpq8j6x8": 592.0
+        },
+        "pot_size": 135.0,
+        "board_cards": [
+            "S10",
+            "C10",
+            "S4"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 30.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 2,
+            "player": "Bekocabron",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 4
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 448.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136070835",
+        "round_no": 3,
+        "current_street": "turn",
+        "blinds": {
+            "small_blind": 30.0,
+            "big_blind": 60.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "Bekocabron": 0,
+            "mmpq8j6x8": 1,
+            "GGM3M": 2
+        },
+        "player_stacks": {
+            "GGM3M": 460.0,
+            "Bekocabron": 448.0,
+            "mmpq8j6x8": 592.0
+        },
+        "pot_size": 135.0,
+        "board_cards": [
+            "S10",
+            "C10",
+            "S4",
+            "D7"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 30.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 4,
+                "player_position": 0
+            },
+            {
+                "round": 2,
+                "player": "mmpq8j6x8",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 5,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 3,
+            "player": "Bekocabron",
+            "action_type": 5,
+            "action_sum": 60.0,
+            "action_no": 6
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 448.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136075600",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 30.0,
+            "big_blind": 60.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 455.0,
+            "Bekocabron": 518.0,
+            "mmpq8j6x8": 527.0
+        },
+        "pot_size": 105.0,
+        "board_cards": [],
+        "previous_actions": [],
+        "action": {
+            "round": 1,
+            "player": "Bekocabron",
+            "action_type": 3,
+            "action_sum": 60.0,
+            "action_no": 1
+        },
+        "players_remaining": 3,
+        "is_button": true,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 518.0,
+        "actor_position": 2
+    },
+    {
+        "gamecode": "10136075600",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 30.0,
+            "big_blind": 60.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 455.0,
+            "Bekocabron": 518.0,
+            "mmpq8j6x8": 527.0
+        },
+        "pot_size": 687.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 60.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 522.0,
+                "action_no": 2,
+                "player_position": 0
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "GGM3M",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 3
+        },
+        "players_remaining": 3,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 455.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136075600",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 30.0,
+            "big_blind": 60.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1,
+            "Bekocabron": 2
+        },
+        "player_stacks": {
+            "GGM3M": 455.0,
+            "Bekocabron": 518.0,
+            "mmpq8j6x8": 527.0
+        },
+        "pot_size": 687.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 60.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 522.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 3,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "Bekocabron",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 4
+        },
+        "players_remaining": 2,
+        "is_button": true,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 518.0,
+        "actor_position": 2
+    },
+    {
+        "gamecode": "10136075623",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 30.0,
+            "big_blind": 60.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 390.0,
+            "Bekocabron": 453.0,
+            "mmpq8j6x8": 657.0
+        },
+        "pot_size": 225.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 120.0,
+                "action_no": 1,
+                "player_position": 2
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "GGM3M",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 2
+        },
+        "players_remaining": 3,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 390.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136075623",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 30.0,
+            "big_blind": 60.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 390.0,
+            "Bekocabron": 453.0,
+            "mmpq8j6x8": 657.0
+        },
+        "pot_size": 225.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 120.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "Bekocabron",
+            "action_type": 3,
+            "action_sum": 60.0,
+            "action_no": 3
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 453.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136075623",
+        "round_no": 2,
+        "current_street": "flop",
+        "blinds": {
+            "small_blind": 30.0,
+            "big_blind": 60.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 390.0,
+            "Bekocabron": 453.0,
+            "mmpq8j6x8": 657.0
+        },
+        "pot_size": 285.0,
+        "board_cards": [
+            "H4",
+            "DA",
+            "C9"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 120.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 60.0,
+                "action_no": 3,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 2,
+            "player": "Bekocabron",
+            "action_type": 5,
+            "action_sum": 60.0,
+            "action_no": 4
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 453.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136075623",
+        "round_no": 3,
+        "current_street": "turn",
+        "blinds": {
+            "small_blind": 30.0,
+            "big_blind": 60.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 390.0,
+            "Bekocabron": 453.0,
+            "mmpq8j6x8": 657.0
+        },
+        "pot_size": 405.0,
+        "board_cards": [
+            "H4",
+            "DA",
+            "C9",
+            "C5"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 120.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 60.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 5,
+                "action_sum": 60.0,
+                "action_no": 4,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "mmpq8j6x8",
+                "action_type": 3,
+                "action_sum": 60.0,
+                "action_no": 5,
+                "player_position": 2
+            }
+        ],
+        "action": {
+            "round": 3,
+            "player": "Bekocabron",
+            "action_type": 5,
+            "action_sum": 120.0,
+            "action_no": 6
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 453.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136075623",
+        "round_no": 4,
+        "current_street": "river",
+        "blinds": {
+            "small_blind": 30.0,
+            "big_blind": 60.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 390.0,
+            "Bekocabron": 453.0,
+            "mmpq8j6x8": 657.0
+        },
+        "pot_size": 645.0,
+        "board_cards": [
+            "H4",
+            "DA",
+            "C9",
+            "C5",
+            "HJ"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 120.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 60.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 5,
+                "action_sum": 60.0,
+                "action_no": 4,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "mmpq8j6x8",
+                "action_type": 3,
+                "action_sum": 60.0,
+                "action_no": 5,
+                "player_position": 2
+            },
+            {
+                "round": 3,
+                "player": "Bekocabron",
+                "action_type": 5,
+                "action_sum": 120.0,
+                "action_no": 6,
+                "player_position": 1
+            },
+            {
+                "round": 3,
+                "player": "mmpq8j6x8",
+                "action_type": 3,
+                "action_sum": 120.0,
+                "action_no": 7,
+                "player_position": 2
+            }
+        ],
+        "action": {
+            "round": 4,
+            "player": "Bekocabron",
+            "action_type": 4,
+            "action_sum": 0.0,
+            "action_no": 8
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 453.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136075623",
+        "round_no": 4,
+        "current_street": "river",
+        "blinds": {
+            "small_blind": 30.0,
+            "big_blind": 60.0,
+            "ante": 5.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "Bekocabron": 1,
+            "mmpq8j6x8": 2
+        },
+        "player_stacks": {
+            "GGM3M": 390.0,
+            "Bekocabron": 453.0,
+            "mmpq8j6x8": 657.0
+        },
+        "pot_size": 967.0,
+        "board_cards": [
+            "H4",
+            "DA",
+            "C9",
+            "C5",
+            "HJ"
+        ],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 120.0,
+                "action_no": 1,
+                "player_position": 2
+            },
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 2,
+                "player_position": 0
+            },
+            {
+                "round": 1,
+                "player": "Bekocabron",
+                "action_type": 3,
+                "action_sum": 60.0,
+                "action_no": 3,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "Bekocabron",
+                "action_type": 5,
+                "action_sum": 60.0,
+                "action_no": 4,
+                "player_position": 1
+            },
+            {
+                "round": 2,
+                "player": "mmpq8j6x8",
+                "action_type": 3,
+                "action_sum": 60.0,
+                "action_no": 5,
+                "player_position": 2
+            },
+            {
+                "round": 3,
+                "player": "Bekocabron",
+                "action_type": 5,
+                "action_sum": 120.0,
+                "action_no": 6,
+                "player_position": 1
+            },
+            {
+                "round": 3,
+                "player": "mmpq8j6x8",
+                "action_type": 3,
+                "action_sum": 120.0,
+                "action_no": 7,
+                "player_position": 2
+            },
+            {
+                "round": 4,
+                "player": "Bekocabron",
+                "action_type": 4,
+                "action_sum": 0.0,
+                "action_no": 8,
+                "player_position": 1
+            },
+            {
+                "round": 4,
+                "player": "mmpq8j6x8",
+                "action_type": 5,
+                "action_sum": 322.0,
+                "action_no": 9,
+                "player_position": 2
+            }
+        ],
+        "action": {
+            "round": 4,
+            "player": "Bekocabron",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 10
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 453.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136075708",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 40.0,
+            "big_blind": 80.0,
+            "ante": 8.0
+        },
+        "player_positions": {
+            "Bekocabron": 0,
+            "mmpq8j6x8": 1,
+            "GGM3M": 2
+        },
+        "player_stacks": {
+            "GGM3M": 355.0,
+            "Bekocabron": 148.0,
+            "mmpq8j6x8": 997.0
+        },
+        "pot_size": 144.0,
+        "board_cards": [],
+        "previous_actions": [],
+        "action": {
+            "round": 1,
+            "player": "GGM3M",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 1
+        },
+        "players_remaining": 3,
+        "is_button": true,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 355.0,
+        "actor_position": 2
+    },
+    {
+        "gamecode": "10136075708",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 40.0,
+            "big_blind": 80.0,
+            "ante": 8.0
+        },
+        "player_positions": {
+            "Bekocabron": 0,
+            "mmpq8j6x8": 1,
+            "GGM3M": 2
+        },
+        "player_stacks": {
+            "GGM3M": 355.0,
+            "Bekocabron": 148.0,
+            "mmpq8j6x8": 997.0
+        },
+        "pot_size": 144.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "GGM3M",
+                "action_type": 0,
+                "action_sum": 0.0,
+                "action_no": 1,
+                "player_position": 2
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "Bekocabron",
+            "action_type": 7,
+            "action_sum": 100.0,
+            "action_no": 2
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "DK",
+            "SA"
+        ],
+        "actor_stack_size": 148.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136075736",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 40.0,
+            "big_blind": 80.0,
+            "ante": 8.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "mmpq8j6x8": 1
+        },
+        "player_stacks": {
+            "GGM3M": 347.0,
+            "mmpq8j6x8": 1153.0
+        },
+        "pot_size": 296.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 160.0,
+                "action_no": 1,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "GGM3M",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 2
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 347.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136075742",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 40.0,
+            "big_blind": 80.0,
+            "ante": 8.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1
+        },
+        "player_stacks": {
+            "GGM3M": 259.0,
+            "mmpq8j6x8": 1241.0
+        },
+        "pot_size": 136.0,
+        "board_cards": [],
+        "previous_actions": [],
+        "action": {
+            "round": 1,
+            "player": "GGM3M",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 1
+        },
+        "players_remaining": 2,
+        "is_button": true,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 259.0,
+        "actor_position": 1
+    },
+    {
+        "gamecode": "10136075749",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 40.0,
+            "big_blind": 80.0,
+            "ante": 8.0
+        },
+        "player_positions": {
+            "GGM3M": 0,
+            "mmpq8j6x8": 1
+        },
+        "player_stacks": {
+            "GGM3M": 211.0,
+            "mmpq8j6x8": 1289.0
+        },
+        "pot_size": 296.0,
+        "board_cards": [],
+        "previous_actions": [
+            {
+                "round": 1,
+                "player": "mmpq8j6x8",
+                "action_type": 23,
+                "action_sum": 160.0,
+                "action_no": 1,
+                "player_position": 1
+            }
+        ],
+        "action": {
+            "round": 1,
+            "player": "GGM3M",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 2
+        },
+        "players_remaining": 2,
+        "is_button": false,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 211.0,
+        "actor_position": 0
+    },
+    {
+        "gamecode": "10136075758",
+        "round_no": 1,
+        "current_street": "preflop",
+        "blinds": {
+            "small_blind": 40.0,
+            "big_blind": 80.0,
+            "ante": 8.0
+        },
+        "player_positions": {
+            "mmpq8j6x8": 0,
+            "GGM3M": 1
+        },
+        "player_stacks": {
+            "GGM3M": 123.0,
+            "mmpq8j6x8": 1377.0
+        },
+        "pot_size": 136.0,
+        "board_cards": [],
+        "previous_actions": [],
+        "action": {
+            "round": 1,
+            "player": "GGM3M",
+            "action_type": 0,
+            "action_sum": 0.0,
+            "action_no": 1
+        },
+        "players_remaining": 2,
+        "is_button": true,
+        "actor_hole_cards": [
+            "unknown",
+            "unknown"
+        ],
+        "actor_stack_size": 123.0,
+        "actor_position": 1
+    }
+]
