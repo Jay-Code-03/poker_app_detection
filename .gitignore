@@ -5,4 +5,4 @@ src/config/__pycache__/regions.cpython-313.pyc
 src/detector/__pycache__/text_detector.cpython-313.pyc
 ipoker_hh/
 ipoker_hh_test/
-
+logs.json
