@@ -7,3 +7,7 @@ ipoker_hh/
 ipoker_hh_test/
 logs.json
 opponent_model.h5
+targets.csv
+tabular_features.csv
+sequence_features.csv
+features.csv
