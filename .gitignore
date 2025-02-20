@@ -6,3 +6,4 @@ src/detector/__pycache__/text_detector.cpython-313.pyc
 ipoker_hh/
 ipoker_hh_test/
 logs.json
+opponent_model.h5
