@@ -11,3 +11,6 @@ targets.csv
 tabular_features.csv
 sequence_features.csv
 features.csv
+poker_analysis_optimized.db-wal
+poker_analysis_optimized.db-shm
+poker_analysis_optimized.db
