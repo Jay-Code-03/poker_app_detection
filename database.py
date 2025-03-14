@@ -127,37 +127,65 @@ def get_action_type(type_code):
         3: "call", 
         4: "check", 
         5: "raise", 
-        7: "raise", 
+        7: "all_in", 
         15: "ante",
         23: "raise"
     }
     return action_types.get(int(type_code) if type_code else 0, f"unknown_{type_code}")
 
-def simplify_action(action_details, round_no, blinds, pot_before_action, round_contributions, current_round_max):
+def simplify_action(action_details, round_no, blinds, pot_before_action, round_contributions, current_round_max, player_stacks=None):
     """
     Simplify the action into a single string category based on context.
     """
-    allowed_types = {0: "fold", 3: "call", 4: "check", 5: "raise", 7: "raise", 15: "ante", 23: "raise"}
+    allowed_types = {0: "fold", 3: "call", 4: "check", 5: "raise", 7: "all_in", 15: "ante", 23: "raise"}
     orig_type = action_details['action_type']
     if orig_type not in allowed_types:
         return None
     base_action = allowed_types[orig_type]
     new_action = action_details.copy()
+
+    if base_action == "all_in":
+        # Determine if this is an all-in call or all-in raise
+        player_id = action_details['player_id']
+        current_player_contrib = round_contributions.get(player_id, 0)
+        
+        # If the action sum is less than or equal to what would be needed to call,
+        # it's an all-in call. Otherwise, it's an all-in raise.
+        call_amount = max(0, current_round_max - current_player_contrib)
+        
+        if action_details['action_sum'] <= call_amount * 1:  # Allow small margin for rounding errors
+            new_action["simple_action_type"] = "all_in_call"
+        else:
+            # It's an all-in raise
+            if round_no == 1:  # Preflop
+                new_action["simple_action_type"] = "all_in_preflop"
+            else:
+                new_action["simple_action_type"] = "all_in_postflop"
     
-    if base_action != "raise":
+    elif base_action != "raise":
         new_action["simple_action_type"] = base_action
     else:
         if round_no == 1:  # Preflop
             bb = blinds.get("big_blind", 1)
             ratio = action_details['action_sum'] / bb if bb != 0 else 0
-            if ratio <= 2.2:
+
+            # Get player's stack size (if available)
+            player_id = action_details['player_id']
+            player_stack = player_stacks.get(player_id, float('inf')) if player_stacks else float('inf')
+            
+            # Check if this is an all-in (using 98% of stack as threshold)
+            is_all_in = action_details['action_sum'] >= 0.98 * player_stack
+
+            if is_all_in:  
+                new_action["simple_action_type"] = "all_in_preflop"
+            elif ratio <= 2.2:
                 new_action["simple_action_type"] = "small_raise_preflop"
             elif ratio <= 2.7:
                 new_action["simple_action_type"] = "mid_raise_preflop"
             elif ratio <= 3.2:
                 new_action["simple_action_type"] = "big_raise_preflop"
             else:
-                new_action["simple_action_type"] = "all_in_preflop"
+                new_action["simple_action_type"] = "consider_all_in_preflop"
         else:  # Postflop
             current_player_contrib = round_contributions.get(action_details['player_id'], 0)
             call_amount = max(0, current_round_max - current_player_contrib)
@@ -354,6 +382,8 @@ def process_xml_file(xml_file_path):
             # Track cumulative contributions
             player_contributions = {p.get('name'): 0.0 for p in players_elem.findall('player')}
             
+            player_stacks = {p.get('name'): safe_float(p.get('chips', '0')) for p in players_elem.findall('player')}
+
             for r in game.findall('round'):
                 round_no = int(r.get('no', '0'))
                 
@@ -370,6 +400,9 @@ def process_xml_file(xml_file_path):
                     action_type = int(action.get('type', '0'))
                     action_sum = safe_float(action.get('sum', '0'))
                     action_order += 1
+                    
+                    # Update player's stack
+                    player_stacks[player_name] = max(0, player_stacks.get(player_name, 0) - action_sum)
                     
                     # Prepare action details
                     action_details = {
@@ -394,7 +427,8 @@ def process_xml_file(xml_file_path):
                             {"big_blind": big_blind, "small_blind": small_blind, "ante": ante}, 
                             current_pot, 
                             round_contributions, 
-                            current_round_max
+                            current_round_max,
+                            player_stacks  # Pass player stacks here
                         )
                         
                         if simple_action is not None:
@@ -703,7 +737,7 @@ def main():
     """Main function to demonstrate the workflow"""
     # Configuration
     db_path = "poker_analysis_optimized.db"
-    xml_folder = "ipoker_hh_test"  # Folder containing XML files
+    xml_folder = "ipoker_hh"  # Folder containing XML files
     
     # Process files with optimized code
     process_directory(xml_folder, db_path, limit=None)  # Set a limit or None for all files
