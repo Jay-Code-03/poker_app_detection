@@ -126,7 +126,7 @@ def get_action_type(type_code):
         2: "big_blind", 
         3: "call", 
         4: "check", 
-        5: "raise", 
+        5: "bet", 
         7: "all_in", 
         15: "ante",
         23: "raise"
@@ -137,7 +137,7 @@ def simplify_action(action_details, round_no, blinds, pot_before_action, round_c
     """
     Simplify the action into a single string category based on context.
     """
-    allowed_types = {0: "fold", 3: "call", 4: "check", 5: "raise", 7: "all_in", 15: "ante", 23: "raise"}
+    allowed_types = {0: "fold", 3: "call", 4: "check", 5: "bet", 7: "all_in", 15: "ante", 23: "raise"}
     orig_type = action_details['action_type']
     if orig_type not in allowed_types:
         return None
@@ -153,7 +153,7 @@ def simplify_action(action_details, round_no, blinds, pot_before_action, round_c
         # it's an all-in call. Otherwise, it's an all-in raise.
         call_amount = max(0, current_round_max - current_player_contrib)
         
-        if action_details['action_sum'] <= call_amount * 1:  # Allow small margin for rounding errors
+        if action_details['action_sum'] <= call_amount * 1.05:  # Allow small margin for rounding errors
             new_action["simple_action_type"] = "all_in_call"
         else:
             # It's an all-in raise
@@ -162,9 +162,23 @@ def simplify_action(action_details, round_no, blinds, pot_before_action, round_c
             else:
                 new_action["simple_action_type"] = "all_in_postflop"
     
-    elif base_action != "raise":
-        new_action["simple_action_type"] = base_action
-    else:
+    elif base_action == "bet":
+        # Bets only occur postflop (rounds 2+)
+        if round_no > 1:
+            effective_pot = pot_before_action
+            ratio = action_details['action_sum'] / effective_pot if effective_pot > 0 else 0
+            
+            if ratio <= 0.33:
+                new_action["simple_action_type"] = "small_bet_postflop"
+            elif ratio <= 0.66:
+                new_action["simple_action_type"] = "mid_bet_postflop"
+            else:
+                new_action["simple_action_type"] = "big_bet_postflop"
+        else:
+            # This shouldn't happen in normal play (a bet in pre-flop)
+            new_action["simple_action_type"] = "unusual_bet_preflop"
+    
+    elif base_action == "raise":
         if round_no == 1:  # Preflop
             bb = blinds.get("big_blind", 1)
             ratio = action_details['action_sum'] / bb if bb != 0 else 0
@@ -173,7 +187,7 @@ def simplify_action(action_details, round_no, blinds, pot_before_action, round_c
             player_id = action_details['player_id']
             player_stack = player_stacks.get(player_id, float('inf')) if player_stacks else float('inf')
             
-            # Check if this is an all-in (using 98% of stack as threshold)
+            # Check if this is an all-in
             is_all_in = action_details['action_sum'] >= 0.98 * player_stack
 
             if is_all_in:  
@@ -192,12 +206,16 @@ def simplify_action(action_details, round_no, blinds, pot_before_action, round_c
             effective_raise = action_details['action_sum'] - call_amount
             effective_pot = pot_before_action + call_amount
             ratio = effective_raise / effective_pot if effective_pot > 0 else 0
+            
             if ratio <= 0.33:
                 new_action["simple_action_type"] = "small_raise_postflop"
             elif ratio <= 0.66:
                 new_action["simple_action_type"] = "mid_raise_postflop"
             else:
                 new_action["simple_action_type"] = "big_raise_postflop"
+    else:
+        new_action["simple_action_type"] = base_action
+        
     return new_action
 
 def process_xml_file(xml_file_path):
