@@ -1,6 +1,0 @@
-opencv-python
-numpy
-pure-python-adb
-pytesseract
-Pillow
-keyboard
