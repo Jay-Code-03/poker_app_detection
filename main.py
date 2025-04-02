@@ -36,6 +36,16 @@ class PokerDetectorApp:
         if actions['B']:
             print(f"- BET options: {actions['B']}")
 
+    def click_check_button(self, current_state):
+        # Now, as an example, if you want to auto-click 'CHECK'
+        check_info = current_state['available_actions']['CHECK']
+        if check_info['available'] and check_info['position'] is not None:
+            x, y = check_info['position']
+            print(f"Automatically tapping CHECK at ({x},{y})")
+            self.device.shell(f"input tap {x} {y}")
+
+            time.sleep(2)  # Wait for a second before the next action
+
     def run(self):
         previous_state = None
         
@@ -66,6 +76,21 @@ class PokerDetectorApp:
                         # Print available actions in a cleaner format
                         self.print_available_actions(current_state['available_actions'])
                         print("================\n")
+
+                        # Log available actions and button positions
+                        print("\nAvailable Actions with Button Locations:")
+                        for action, data in current_state['available_actions'].items():
+                            if action in ['FOLD', 'CALL', 'CHECK']:
+                                if data.get('available'):
+                                    print(f"{action}: {data}")
+                            else:  # For 'R' and 'B'
+                                if data:  # List not empty
+                                    print(f"{action}: {data}")
+
+                        # Log all actions buttons with locations
+                        for action, data in current_state['available_actions'].items():
+                            print(f"{action}: {data}")
+
                         
                         previous_state = current_state
                 

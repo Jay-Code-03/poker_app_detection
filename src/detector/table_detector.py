@@ -134,10 +134,10 @@ class PokerTableDetector:
             detections (List[Dict]): List of detected actions
         """
         available_actions = {
-            'FOLD': False,
-            'CALL': False,
-            'CHECK': False,
-            'R': [],
+            'FOLD': {'available': False, 'position': None},
+            'CALL': {'available': False, 'position': None},
+            'CHECK': {'available': False, 'position': None},
+            'R': [], # List of dicts: {'value': number, 'position': (x, y)}
             'B': []
         }
 
@@ -161,12 +161,13 @@ class PokerTableDetector:
             processed_positions.add(pos)
             
             if action_type in ['FOLD', 'CALL', 'CHECK']:
-                available_actions[action_type] = True
+                available_actions[action_type]['available'] = True
+                available_actions[action_type]['position'] = pos
             elif action_type in ['R', 'B']:
                 # Extract value from the button region
                 value = self.extract_action_value(screen, pos)
                 if value > 0:
-                    available_actions[action_type].append(value)
+                    available_actions[action_type].append({'value': value, 'position': pos})
 
         return available_actions
 
